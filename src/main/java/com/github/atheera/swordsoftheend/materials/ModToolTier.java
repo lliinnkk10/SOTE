@@ -13,7 +13,9 @@ public enum ModToolTier implements Tier {
 	BASE(1, 2420, 1.0f, 0.0f, 20, () -> {
 		return Ingredient.of(Items.NETHERITE_INGOT);
 	}),
-	TIERONE(1, 3269, 1.0f, 0.0f, 0, null);
+	TIERONE(1, 3269, 1.0f, 0.0f, 0, () -> {
+		return Ingredient.of(Items.NETHERITE_INGOT);
+	});
 	
 	private final int harvestLevel;
 	private final int maxUses;
@@ -21,7 +23,6 @@ public enum ModToolTier implements Tier {
 	private final float attackDamage;
 	private final int enchantability;
 	private final LazyLoadedValue<Ingredient> repairMaterial;
-
 
 	private ModToolTier(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, Supplier<Ingredient> repairMaterial) {
 		this.harvestLevel = harvestLevel;
@@ -38,5 +39,4 @@ public enum ModToolTier implements Tier {
 	@Override public int getLevel() { return this.harvestLevel; }
 	@Override public int getEnchantmentValue() { return this.enchantability; }
 	@Override public Ingredient getRepairIngredient() { return this.repairMaterial.get(); }
-
 }

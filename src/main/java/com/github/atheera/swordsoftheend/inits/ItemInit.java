@@ -33,17 +33,11 @@ public class ItemInit {
 		// Crafting
 	
 		// Swords
-	public static final RegistryObject<Item> ITEM_SWORD_BASE = ITEMS.register("item_sword_base", 
-		() -> new ItemSwordBase(ModToolTier.BASE, 8, -2.4f, new Item.Properties().tab(iTab).rarity(Rarities.PURPLE)));
-	public static final RegistryObject<Item> ITEM_SWORD_AMETHYST = ITEMS.register("item_sword_amethyst", 
-		() -> new ItemSwordAmethyst(ModToolTier.TIERONE, 13, -2.6f, new Item.Properties().tab(iTab).rarity(GOLD)));
-	public static final RegistryObject<Item> ITEM_SWORD_DIAMOND = ITEMS.register("item_sword_diamond", 
-		() -> new ItemSwordDiamond(ModToolTier.TIERONE, 10, -2.2f, new Item.Properties().tab(iTab).rarity(GOLD)));
-	public static final RegistryObject<Item> ITEM_SWORD_EMERALD = ITEMS.register("item_sword_emerald", 
-		() -> new ItemSwordEmerald(ModToolTier.TIERONE, 15, -2.0f, new Item.Properties().tab(iTab).rarity(GOLD)));
-	public static final RegistryObject<Item> ITEM_SWORD_END = ITEMS.register("item_sword_end", 
-		() -> new ItemSwordEnd(ModToolTier.TIERONE, 10, -2.4f, new Item.Properties().tab(iTab).rarity(GOLD)));
-	public static final RegistryObject<Item> ITEM_SWORD_LUMIN = ITEMS.register("item_sword_lumin", 
-		() -> new ItemSwordLumin(ModToolTier.TIERONE, 10, -2.4f, new Item.Properties().tab(iTab).rarity(GOLD)));
+	public static final RegistryObject<Item> ITEM_SWORD_BASE = ITEMS.register("item_sword_base", () -> new ItemSwordBase(ModToolTier.BASE, 8, -2.4f, new Item.Properties().tab(iTab).rarity(Rarities.PURPLE)));
+	public static final RegistryObject<Item> ITEM_SWORD_AMETHYST = ITEMS.register("item_sword_amethyst", () -> new ItemSwordAmethyst(ModToolTier.TIERONE, 13, -2.6f, new Item.Properties().tab(iTab).rarity(GOLD)));
+	public static final RegistryObject<Item> ITEM_SWORD_DIAMOND = ITEMS.register("item_sword_diamond", () -> new ItemSwordDiamond(ModToolTier.TIERONE, 10, -2.2f, new Item.Properties().tab(iTab).rarity(GOLD)));
+	public static final RegistryObject<Item> ITEM_SWORD_EMERALD = ITEMS.register("item_sword_emerald", () -> new ItemSwordEmerald(ModToolTier.TIERONE, 15, -2.0f, new Item.Properties().tab(iTab).rarity(GOLD)));
+	public static final RegistryObject<Item> ITEM_SWORD_END = ITEMS.register("item_sword_end", () -> new ItemSwordEnd(ModToolTier.TIERONE, 10, -2.4f, new Item.Properties().tab(iTab).rarity(GOLD)));
+	public static final RegistryObject<Item> ITEM_SWORD_LUMIN = ITEMS.register("item_sword_lumin", () -> new ItemSwordLumin(ModToolTier.TIERONE, 10, -2.4f, new Item.Properties().tab(iTab).rarity(GOLD)));
 	
 }
