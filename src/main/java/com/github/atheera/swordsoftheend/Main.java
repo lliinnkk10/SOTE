@@ -3,6 +3,8 @@ package com.github.atheera.swordsoftheend;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.github.atheera.swordsoftheend.inits.ItemInit;
+
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -33,8 +35,8 @@ public class Main
         modEventBus.addListener(this::enqueueIMC);
         modEventBus.addListener(this::processIMC);
         modEventBus.addListener(this::doClientStuff);
-
         
+        ItemInit.ITEMS.register(modEventBus);
         
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -68,4 +70,6 @@ public class Main
             LOGGER.info("HELLO from Register Block");
         }
     }
+    
+
 }
