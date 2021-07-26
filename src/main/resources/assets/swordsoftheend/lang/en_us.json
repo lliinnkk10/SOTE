@@ -1,10 +1,17 @@
 {
-	"itemGroup.sote_item_tab": "Swords of the End - Items",
-	"itemGroup.sote_block_tab": "Swords of the End - Blocks",
+	"itemGroup.sote_item_tab": "Items of the End",
+	"itemGroup.sote_block_tab": "Blocks of the End",
+	"itemGroup.sote_sword_tab": "Swords of the End",
 	
 	"item.swordsoftheend.item_gem_diamond": "Enchanted Diamond",
 	
 	"item.swordsoftheend.item_sword_base": "Basic Sword",
+	"item.swordsoftheend.item_sword_emerald": "Death",
+	"item.swordsoftheend.item_sword_end": "Ender Ender",
+	"item.swordsoftheend.item_sword_lumin": "Sting",
+	"item.swordsoftheend.item_sword_sapphire": "Everfrost",
+	"item.swordsoftheend.item_sword_ruby": "Hellsbane",
+	"item.swordsoftheend.item_sword_level": "Soul's Edge",
 	"item.swordsoftheend.item_sword_amethyst": "Vampirical Blade",
 	"item.swordsoftheend.item_sword_diamond": "YEEEEEEETCANNON!!!"
 	

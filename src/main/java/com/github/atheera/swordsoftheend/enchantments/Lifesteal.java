@@ -43,14 +43,14 @@ public class Lifesteal extends ModEnchant {
     }
 
     @Override
-    public void doPostHurt(LivingEntity user, Entity target, int level) {
+    public void doPostAttack(LivingEntity user, Entity target, int level) {
         if(user instanceof Player) {
             switch (level) {
-                case 1: user.heal(0.5f);
-                case 2: user.heal(1.0f);
-                case 3: user.heal(1.5f);
-                case 4: user.heal(2.0f);
-                case 5: user.heal(2.5f);
+                case 1: user.heal(0.2f);
+                case 2: user.heal(0.4f);
+                case 3: user.heal(0.6f);
+                case 4: user.heal(0.8f);
+                case 5: user.heal(1.0f);
             }
         }
         super.doPostHurt(user, target, level);
