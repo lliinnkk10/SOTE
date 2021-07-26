@@ -55,9 +55,9 @@ public class ItemSwordDiamond extends ItemSword {
 	
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
-		player.addEffect(new MobEffectInstance(MobEffects.JUMP, sec*10, 2));
-		player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, sec*10, 2));
-		player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, sec*10));
+		player.addEffect(new MobEffectInstance(MobEffects.JUMP, sec*15, 2));
+		player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, sec*15, 2));
+		player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, sec*15));
 		player.getCooldowns().addCooldown(this, sec*30);
 		return super.use(world, player, hand);
 	}

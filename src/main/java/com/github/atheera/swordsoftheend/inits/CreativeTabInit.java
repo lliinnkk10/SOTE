@@ -26,5 +26,9 @@ public class CreativeTabInit extends CreativeModeTab {
 			return new ItemStack(Blocks.ANDESITE);
 		}
 	});
-    
+
+	public static final CreativeModeTab SOTE_S_CMT = (new CreativeTabInit(3, "sote_sword_tab") {
+		public ItemStack makeIcon() { return new ItemStack(ItemInit.ITEM_SWORD_BASE.get()); }
+	});
+
 }

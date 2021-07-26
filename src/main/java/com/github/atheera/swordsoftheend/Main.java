@@ -1,5 +1,6 @@
 package com.github.atheera.swordsoftheend;
 
+import com.github.atheera.swordsoftheend.inits.EnchantInit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -35,10 +36,12 @@ public class Main
         modEventBus.addListener(this::enqueueIMC);
         modEventBus.addListener(this::processIMC);
         modEventBus.addListener(this::doClientStuff);
-        
+
+        EnchantInit.ENCHANT.register(modEventBus);
         ItemInit.ITEMS.register(modEventBus);
         
         MinecraftForge.EVENT_BUS.register(this);
+        instance = this;
     }
 
     private void setup(final FMLCommonSetupEvent event) {

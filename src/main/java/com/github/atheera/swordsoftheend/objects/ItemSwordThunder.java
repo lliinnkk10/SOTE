@@ -9,7 +9,7 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 
-public class ItemSwordThunder extends SwordItem {
+public class ItemSwordThunder extends ItemSword {
 
 	public ItemSwordThunder(Tier tier, int damage, float speed, Properties prop) {
 		super(tier, damage, speed, prop);

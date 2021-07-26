@@ -8,10 +8,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
 public class ItemSword extends SwordItem {
@@ -36,7 +33,12 @@ public class ItemSword extends SwordItem {
 	public void inventoryTick(ItemStack stack, Level world, Entity entity, int time, boolean held) {
 		super.inventoryTick(stack, world, entity, time, held);
 	}
-	
+
+	@Override
+	public Rarity getRarity(ItemStack stack) {
+		return super.getRarity(stack);
+	}
+
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
 		return super.use(world, player, hand);
