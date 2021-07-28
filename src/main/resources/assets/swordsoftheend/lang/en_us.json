@@ -4,7 +4,33 @@
 	"itemGroup.sote_sword_tab": "Swords of the End",
 	
 	"item.swordsoftheend.item_gem_diamond": "Enchanted Diamond",
-	
+	"item.swordsoftheend.item_gem_amethyst_e": "Enchanted Amethyst",
+	"item.swordsoftheend.item_gem_sapphire_e": "Enchanted Sapphire",
+	"item.swordsoftheend.item_gem_emerald_e": "Enchanted Emerald",
+	"item.swordsoftheend.item_gem_ruby_e": "Enchanted Ruby",
+	"item.swordsoftheend.item_dust_magic": "Enchantment Dust",
+
+	"item.swordsoftheend.item_gem_amethyst": "Amethyst",
+	"item.swordsoftheend.item_gem_ruby": "Ruby",
+	"item.swordsoftheend.item_gem_sapphire": "Sapphire",
+	"item.swordsoftheend.item_shard_ruby": "Ruby Shard",
+	"item.swordsoftheend.item_shard_sapphire": "Sapphire Shard",
+
+	"item.swordsoftheend.item_ingot_gold": "Energized Gold Ingot",
+	"item.swordsoftheend.item_ingot_lumin": "Luminite Ingot",
+
+	"item.swordsoftheend.item_core_amethyst": "Amethyst Core",
+	"item.swordsoftheend.item_core_base": "Base Core",
+	"item.swordsoftheend.item_core_diamond": "Diamond Core",
+	"item.swordsoftheend.item_core_emerald": "Emerald Core",
+	"item.swordsoftheend.item_core_end": "Ender Core",
+	"item.swordsoftheend.item_core_level": "Leveling Core",
+	"item.swordsoftheend.item_core_lumin": "Luminite Core",
+	"item.swordsoftheend.item_core_ruby": "Ruby Core",
+	"item.swordsoftheend.item_core_sapphire": "Sapphire Core",
+	"item.swordsoftheend.item_core_thunder": "Thunder Core",
+	"item.swordsoftheend.item_core_ultimate": "Ultimate Core",
+
 	"item.swordsoftheend.item_sword_base": "Basic Sword",
 	"item.swordsoftheend.item_sword_emerald": "Death",
 	"item.swordsoftheend.item_sword_end": "Ender Ender",
@@ -13,6 +39,8 @@
 	"item.swordsoftheend.item_sword_ruby": "Hellsbane",
 	"item.swordsoftheend.item_sword_level": "Soul's Edge",
 	"item.swordsoftheend.item_sword_amethyst": "Vampirical Blade",
-	"item.swordsoftheend.item_sword_diamond": "YEEEEEEETCANNON!!!"
+	"item.swordsoftheend.item_sword_diamond": "YEEEEEEETCANNON!!!",
+	"item.swordsoftheend.item_sword_thunder": "Berserker's Fury",
+	"item.swordsoftheend.item_sword_ultimate": "Cthulhu's End"
 	
 }
