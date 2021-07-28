@@ -1,6 +1,7 @@
 package com.github.atheera.swordsoftheend;
 
 import com.github.atheera.swordsoftheend.inits.EnchantInit;
+import com.github.atheera.swordsoftheend.utils.ClientEventBus;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -49,7 +50,7 @@ public class Main
     }
     
     private void doClientStuff(final FMLClientSetupEvent event) {
-    	
+    	event.enqueueWork(ClientEventBus::registerPropertyOverride);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {

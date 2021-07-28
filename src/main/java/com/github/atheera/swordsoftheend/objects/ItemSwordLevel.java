@@ -1,7 +1,5 @@
 package com.github.atheera.swordsoftheend.objects;
 
-import java.util.List;
-
 import com.github.atheera.swordsoftheend.inits.EnchantInit;
 import com.github.atheera.swordsoftheend.materials.Rarities;
 import com.github.atheera.swordsoftheend.utils.KeyboardHelper;
@@ -23,9 +21,14 @@ import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
+
+import java.util.List;
 
 public class ItemSwordLevel extends ItemSword {
 
