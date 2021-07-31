@@ -2,6 +2,7 @@ package com.github.atheera.swordsoftheend.materials;
 
 import java.util.function.Supplier;
 
+import com.github.atheera.swordsoftheend.inits.ItemInit;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
@@ -15,6 +16,9 @@ public enum ModToolTier implements Tier {
 	}),
 	TIERONE(1, 3269, 1.0f, 0.0f, 0, () -> {
 		return Ingredient.of(Items.NETHERITE_INGOT);
+	}),
+	TIERTWO(1, 1569, 1.0f, 0.0f, 0, () ->{
+		return Ingredient.of(ItemInit.ITEM_CORE_LEVEL.get());
 	});
 	
 	private final int harvestLevel;
@@ -24,7 +28,7 @@ public enum ModToolTier implements Tier {
 	private final int enchantability;
 	private final LazyLoadedValue<Ingredient> repairMaterial;
 
-	private ModToolTier(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, Supplier<Ingredient> repairMaterial) {
+	ModToolTier(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, Supplier<Ingredient> repairMaterial) {
 		this.harvestLevel = harvestLevel;
 		this.maxUses = maxUses;
 		this.efficiency = efficiency;

@@ -1,5 +1,6 @@
 package com.github.atheera.swordsoftheend.inits;
 
+import com.github.atheera.swordsoftheend.enchantments.Enderbane;
 import com.github.atheera.swordsoftheend.enchantments.Lifesteal;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.enchantment.Enchantment;
@@ -16,5 +17,6 @@ public class EnchantInit {
 
     public static final RegistryObject<Enchantment> LIFESTEAL = ENCHANT.register("lifesteal",
         () -> new Lifesteal(Enchantment.Rarity.RARE, EnchantmentCategory.WEAPON, new EquipmentSlot[] { EquipmentSlot.MAINHAND}));
-
+    public static final RegistryObject<Enchantment> ENDERBANE = ENCHANT.register("enderbane",
+        () -> new Enderbane(Enchantment.Rarity.RARE, EnchantmentCategory.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND}));
 }

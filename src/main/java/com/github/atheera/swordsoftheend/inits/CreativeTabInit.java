@@ -17,7 +17,7 @@ public class CreativeTabInit extends CreativeModeTab {
 
     public static final CreativeModeTab SOTE_I_CMT = (new CreativeTabInit(1, "sote_item_tab") {
     	public ItemStack makeIcon() {
-    		return new ItemStack(ItemInit.ITEM_GEM_DIAMOND_E.get());
+    		return new ItemStack(ItemInit.ITEM_CORE_BASE.get());
     	}
     });
     

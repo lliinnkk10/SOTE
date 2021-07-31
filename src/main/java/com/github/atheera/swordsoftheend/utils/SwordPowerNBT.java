@@ -1,6 +1,6 @@
 package com.github.atheera.swordsoftheend.utils;
 
-import com.github.atheera.swordsoftheend.objects.ItemSwordLevel;
+import com.github.atheera.swordsoftheend.objects.items.ItemSwordLevel;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.item.ItemPropertyFunction;
 import net.minecraft.world.entity.LivingEntity;
