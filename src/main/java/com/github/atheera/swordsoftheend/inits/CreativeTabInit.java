@@ -23,7 +23,8 @@ public class CreativeTabInit extends CreativeModeTab {
     
 	public static final CreativeModeTab SOTE_B_CMT = (new CreativeTabInit(2, "sote_block_tab") {
 		public ItemStack makeIcon() {
-			return new ItemStack(Blocks.ANDESITE);
+			return new ItemStack(BlockInit.BLOCK_ORE_LUMIN.get()
+			);
 		}
 	});
 

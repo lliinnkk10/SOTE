@@ -48,6 +48,14 @@ public class OreGeneration {
                 OregenConfig.lumin_count.get(),
                 OregenConfig.lumin_spawn.get());
             generateOre(event.getGeneration(),
+                OreConfiguration.Predicates.DEEPSLATE_ORE_REPLACEABLES,
+                BlockInit.BLOCK_ORE_LUMIN.get().defaultBlockState(),
+                OregenConfig.deep_lumin_size.get(),
+                OregenConfig.deep_lumin_minHeight.get(),
+                OregenConfig.deep_lumin_maxHeight.get(),
+                OregenConfig.deep_lumin_count.get(),
+                OregenConfig.deep_lumin_spawn.get());
+            generateOre(event.getGeneration(),
                 OreConfiguration.Predicates.NATURAL_STONE,
                 BlockInit.BLOCK_ORE_GOLD.get().defaultBlockState(),
                 OregenConfig.gold_size.get(),
@@ -55,6 +63,46 @@ public class OreGeneration {
                 OregenConfig.gold_maxHeight.get(),
                 OregenConfig.gold_count.get(),
                 OregenConfig.lumin_spawn.get());
+            generateOre(event.getGeneration(),
+                OreConfiguration.Predicates.DEEPSLATE_ORE_REPLACEABLES,
+                BlockInit.BLOCK_ORE_GOLD.get().defaultBlockState(),
+                OregenConfig.deep_gold_size.get(),
+                OregenConfig.deep_gold_minHeight.get(),
+                OregenConfig.deep_gold_maxHeight.get(),
+                OregenConfig.deep_gold_count.get(),
+                OregenConfig.deep_lumin_spawn.get());
+            generateOre(event.getGeneration(),
+                OreConfiguration.Predicates.NATURAL_STONE,
+                BlockInit.BLOCK_ORE_MAGIC.get().defaultBlockState(),
+                OregenConfig.enchant_size.get(),
+                OregenConfig.enchant_minHeight.get(),
+                OregenConfig.enchant_maxHeight.get(),
+                OregenConfig.enchant_count.get(),
+                OregenConfig.enchant_spawn.get());
+            generateOre(event.getGeneration(),
+                OreConfiguration.Predicates.DEEPSLATE_ORE_REPLACEABLES,
+                BlockInit.BLOCK_ORE_DEEP_MAGIC.get().defaultBlockState(),
+                OregenConfig.deep_enchant_size.get(),
+                OregenConfig.deep_enchant_minHeight.get(),
+                OregenConfig.deep_enchant_maxHeight.get(),
+                OregenConfig.deep_enchant_count.get(),
+                OregenConfig.deep_enchant_spawn.get());
+            generateOre(event.getGeneration(),
+                    OreConfiguration.Predicates.NATURAL_STONE,
+                    BlockInit.BLOCK_ORE_RUBY.get().defaultBlockState(),
+                    4, 10, 30, 2, true);
+            generateOre(event.getGeneration(),
+                    OreConfiguration.Predicates.NATURAL_STONE,
+                    BlockInit.BLOCK_ORE_DEEP_RUBY.get().defaultBlockState(),
+                    4, 10, 30, 2, true);
+            generateOre(event.getGeneration(),
+                    OreConfiguration.Predicates.NATURAL_STONE,
+                    BlockInit.BLOCK_ORE_SAPPHIRE.get().defaultBlockState(),
+                    4, 10, 30, 2, true);
+            generateOre(event.getGeneration(),
+                    OreConfiguration.Predicates.NATURAL_STONE,
+                    BlockInit.BLOCK_ORE_DEEP_SAPPHIRE.get().defaultBlockState(),
+                    4, 10, 30, 2, true);
         }
 
 

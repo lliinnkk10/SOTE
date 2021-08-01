@@ -43,7 +43,7 @@ public class Main {
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.server_config);
 
         try {
-            Config.loadConfig(Config.server_config, FMLPaths.CONFIGDIR.get().resolve("swordsoftheend-server.toml").toString());
+            Config.loadConfig(Config.server_config, FMLPaths.CONFIGDIR.get().resolve("swordsoftheend.toml").toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
